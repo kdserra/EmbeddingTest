@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>EmbeddingTest</RootNamespace>
+
+        <OutputPath>..\Bin\Windows\$(Configuration)\</OutputPath>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+        <!-- Force msbuild to check to rebuild this assembly instead of letting VS IDE guess -->
+        <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+
+        <!-- Embed .NET and managed assemblies -->
+        <SelfContained>true</SelfContained>
+        <PublishSingleFile>true</PublishSingleFile>
+
+        <DebugSymbols>false</DebugSymbols>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Costura.Fody" Version="5.7.0">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="native-libs\avcodec-57.dll"/>
+        <EmbeddedResource Include="native-libs\avdevice-57.dll"/>
+        <EmbeddedResource Include="native-libs\avfilter-6.dll"/>
+        <EmbeddedResource Include="native-libs\avformat-57.dll"/>
+        <EmbeddedResource Include="native-libs\avutil-55.dll"/>
+        <EmbeddedResource Include="native-libs\d3dcompiler_47.dll"/>
+        <EmbeddedResource Include="native-libs\D3DCompiler_47_cor3.dll"/>
+        <EmbeddedResource Include="native-libs\freetype.dll"/>
+        <EmbeddedResource Include="native-libs\libbulletc.dll"/>
+        <EmbeddedResource Include="native-libs\libstride.dll"/>
+        <EmbeddedResource Include="native-libs\libstrideaudio.dll"/>
+        <EmbeddedResource Include="native-libs\libstridenavigation.dll"/>
+        <EmbeddedResource Include="native-libs\libstridevr.dll"/>
+        <EmbeddedResource Include="native-libs\openvr_api.dll"/>
+        <EmbeddedResource Include="native-libs\openxr_loader.dll"/>
+        <EmbeddedResource Include="native-libs\PenImc_cor3.dll"/>
+        <EmbeddedResource Include="native-libs\PresentationNative_cor3.dll"/>
+        <EmbeddedResource Include="native-libs\SDL2.dll"/>
+        <EmbeddedResource Include="native-libs\swresample-2.dll"/>
+        <EmbeddedResource Include="native-libs\swscale-4.dll"/>
+        <EmbeddedResource Include="native-libs\vcruntime140_cor3.dll"/>
+        <EmbeddedResource Include="native-libs\wpfgfx_cor3.dll"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\EmbeddingTest\EmbeddingTest.csproj"/>
+    </ItemGroup>
+
+</Project>

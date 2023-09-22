@@ -1,0 +1,28 @@
+﻿<Weavers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FodyWeavers.xsd">
+    <Costura>
+        <Unmanaged64Assemblies>
+            avcodec-57
+            avdevice-57
+            avfilter-6
+            avformat-57
+            avutil-55
+            d3dcompiler_47
+            D3DCompiler_47_cor3
+            freetype
+            libbulletc
+            libstride
+            libstrideaudio
+            libstridenavigation
+            libstridevr
+            openvr_api
+            openxr_loader
+            PenImc_cor3
+            PresentationNative_cor3
+            SDL2
+            swresample-2
+            swscale-4
+            vcruntime140_cor3
+            wpfgfx_cor3
+        </Unmanaged64Assemblies>
+    </Costura>
+</Weavers>

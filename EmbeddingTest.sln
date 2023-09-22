@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmbeddingTest.Windows", "EmbeddingTest.Windows\EmbeddingTest.Windows.csproj", "{993F660D-7E52-4C5C-8CAC-9BF40D80813D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmbeddingTest", "EmbeddingTest\EmbeddingTest.csproj", "{3B3CD67F-0307-469C-B21C-D94920A75D07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{993F660D-7E52-4C5C-8CAC-9BF40D80813D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993F660D-7E52-4C5C-8CAC-9BF40D80813D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993F660D-7E52-4C5C-8CAC-9BF40D80813D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993F660D-7E52-4C5C-8CAC-9BF40D80813D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B3CD67F-0307-469C-B21C-D94920A75D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B3CD67F-0307-469C-B21C-D94920A75D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B3CD67F-0307-469C-B21C-D94920A75D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B3CD67F-0307-469C-B21C-D94920A75D07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
